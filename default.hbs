@@ -14,6 +14,55 @@
 
     <link rel="shortcut icon" type="image/png" href="{{asset "favicon.png"}}">
 
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{meta_title}}">
+    
+    <meta name="twitter:description" content="{{meta_description}}">
+    
+    {{#post}}
+    <meta name="twitter:description" content="{{excerpt characters="220"}}">
+    <meta name="og:description" content="{{excerpt characters="220"}}">
+    {{/post}}
+    
+    <meta name="twitter:site" content="@nixon1333">
+    <meta name="twitter:creator" content="@nixon1333">
+    <meta property="fb:admins" content="nixon1333">
+    <meta property="og:url" content="{{@blog.url}}{{url}}" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{meta_title}}">
+    
+    <meta name="og:descriptionn" content="{{meta_description}}">
+    
+    <meta property="og:image" content="{{@blog.url}}{{@blog.logo}}" />
+    
+    
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="{{asset "favicons/apple-touch-icon-57x57.png"}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{asset "favicons/apple-touch-icon-114x114.png"}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset "favicons/apple-touch-icon-72x72.png"}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{asset "favicons/apple-touch-icon-144x144.png"}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{asset "favicons/apple-touch-icon-60x60.png"}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{asset "favicons/apple-touch-icon-120x120.png"}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset "favicons/apple-touch-icon-76x76.png"}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{asset "favicons/apple-touch-icon-152x152.png"}}">
+    <meta name="apple-mobile-web-app-title" content="{{meta_title}}">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-196x196.png"}}" sizes="196x196">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-160x160.png"}}" sizes="160x160">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-96x96.png"}}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-16x16.png"}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-32x32.png"}}" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{asset "favicons/mstile-144x144.png"}}">
+    <meta name="msapplication-config" content="{{asset "favicons/browserconfig.xml"}}">
+    <meta name="application-name" content="{{meta_title}}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- pinterest -->
+    <meta name="p:domain_verify" content="8169c27a4e095fdb78c50a1113c81e7e"/>
+
+<!--    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">-->
+
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
@@ -53,7 +102,7 @@
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
+      {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
